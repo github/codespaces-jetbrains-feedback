@@ -36,3 +36,9 @@ Open the JetBrains gateway and click `Install` next to the GitHub Codespaces Pro
 ## Common Issues
 
 ### SSH Connection Issue
+
+If you're having trouble connecting and the stack trace includes information about your SSH setup, there may be an issue with your keys.
+
+If you have a key matching `/Users/<name>/.ssh/id_ed25519`, it's possible that this was a malformed key from connecting to codespaces with an older version of the `gh` client.
+
+To fix this, try removing the key and going through the connectin process again. You should see a key called `codespaces.auto` in your SSH directory and the connection should succeed. 
