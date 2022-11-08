@@ -34,3 +34,5 @@ Open the JetBrains gateway and click `Install` next to the GitHub Codespaces Pro
 ![Screen Shot 2022-11-04 at 1 00 46 PM](https://user-images.githubusercontent.com/1105600/200660519-3a110989-b462-4beb-9e3b-5f0dbd7dca21.png)
 
 ## Common Issues
+
+### SSH Connection Issue
