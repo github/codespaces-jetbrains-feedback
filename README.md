@@ -1,6 +1,6 @@
 # Codespaces Plugin for the JetBrains Gateway
 
-The Codespaces team is currently partnering with JetBrains to provide a first-class experience in the JetBrains product at allow you to connect to develop using your favorite JetBrains based IDE on an existing Codespace.
+The Codespaces team is currently partnering with JetBrains to provide a first-class experience in the JetBrains product at allow you to connect to and develop using your favorite JetBrains based IDE on an existing Codespace.
 
 The following document provides instructions for downloading and installing the plugin and connecting to your first Codespaces. The document assumes that you have access to GitHub Codespaces and have already created a Codespace at http://github.com or using the GitHub CLI.
 
