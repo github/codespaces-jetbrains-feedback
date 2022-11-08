@@ -41,4 +41,31 @@ If you're having trouble connecting and the stack trace includes information abo
 
 If you have a key matching `/Users/<name>/.ssh/id_ed25519`, it's possible that this was a malformed key from connecting to codespaces with an older version of the `gh` client.
 
-To fix this, try removing the key and going through the connectin process again. You should see a key called `codespaces.auto` in your SSH directory and the connection should succeed. 
+To fix this, try removing the key and going through the connectin process again. You should see a key called `codespaces.auto` in your SSH directory and the connection should succeed.
+
+### MacOS 13 (Ventura)
+
+If you are running MacOS 13 (Ventura), the JetBrains Client may be blocked by OS-level security features:
+
+![Screenshot 2022-11-08 at 11 09 15](https://user-images.githubusercontent.com/4679612/200692344-e64d5f79-07d4-481c-bba5-a1a0e3c6a370.png)
+
+If you see the above message while attempting to connect to a codespace via the JetBrains Gateway or any compatible JetBrains IDE, you can follow these steps to resolve the issue:
+
+1. Open `System Preferences` and navigate to `Privacy & Security`
+
+![Screenshot 2022-11-08 at 11 09 46](https://user-images.githubusercontent.com/4679612/200692779-12131d82-ddb7-411d-8826-ceaa39887079.png)
+
+2. Scroll down until you see the message about the JetBrains Client being blocked
+
+![Screenshot 2022-11-08 at 11 09 54](https://user-images.githubusercontent.com/4679612/200692894-cb6c32f4-ff0d-4e1d-8906-269a84a62c85.png)
+
+3. Click `Open Anyway`
+
+4. Connect to your codespace
+
+**Note:** On the first connection after allowing the JetBrains Client, you may see the following warning:
+![image (1)](https://user-images.githubusercontent.com/4679612/200693247-c46774e1-261e-447f-991c-353f9aff4a77.png)
+
+If you see this warning, click `Open` and everything should work as expected.
+
+:bulb: You should only need to do this once- subsequent connections should work as expected.
