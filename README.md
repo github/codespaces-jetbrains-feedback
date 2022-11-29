@@ -1,6 +1,6 @@
 # Codespaces Plugin for the JetBrains Gateway
 
-The Codespaces team is currently partnering with JetBrains to provide a first-class experience in the JetBrains product at allow you to connect to and develop using your favorite JetBrains based IDE on an existing Codespace.
+The Codespaces team is partnering with JetBrains to provide a first-class experience in the JetBrains product at allow you to connect to and develop using your favorite JetBrains based IDE on an existing Codespace.
 
 The following document provides instructions for downloading and installing the plugin and connecting to your first Codespaces. The document assumes that you have access to GitHub Codespaces and have already created a codespace from [the web](https://github.com/codespaces) or using the [GitHub CLI](https://docs.github.com/en/codespaces/developing-in-codespaces/using-github-codespaces-with-github-cli#create-a-new-codespace).
 
@@ -33,7 +33,31 @@ Open the JetBrains gateway and click `Install` next to the GitHub Codespaces Pro
 
 ![Screen Shot 2022-11-04 at 1 00 46 PM](https://user-images.githubusercontent.com/1105600/200660519-3a110989-b462-4beb-9e3b-5f0dbd7dca21.png)
 
-## Common Issues
+### Updating the Codespaces Plugin
+
+1. Open the Gateway
+2. Go to `Preferences > Plugins`
+3. Go to the `Installed` tab
+4. Apply the update, and restart the Gateway if needed
+
+![Screenshot 2022-11-29 at 15 17 35](https://user-images.githubusercontent.com/4679612/204660790-af17ff4f-3daf-4409-970f-3d44fc8e9f59.png)
+![Screenshot 2022-11-29 at 15 17 56](https://user-images.githubusercontent.com/4679612/204660804-4d47dc30-ffdd-4c4a-ae64-f9587f9a1ba1.png)
+
+### Transitioning from the Alpha
+
+If you participated in the Alpha testing of this plugin, you may need to clear your custom plugin repositories so that you can download the extension from the stable channel of the JetBrains Marketplace. To do so:
+
+1. Open the Gateway
+2. Go to `Preferences > Plugins`
+![Screenshot 2022-11-29 at 15 17 35](https://user-images.githubusercontent.com/4679612/204660790-af17ff4f-3daf-4409-970f-3d44fc8e9f59.png)
+3. Click the gear icon, and select `Manage plugin repositories`
+![Screenshot 2022-11-29 at 16 16 40](https://user-images.githubusercontent.com/4679612/204670032-fd747d1a-f94e-4912-9c51-aa8f0a5c5e75.png)
+4. If the Alpha repository URL (`https://plugins.jetbrains.com/plugins/codespaces-alpha/list`) is in your custom repositories list, remove it and click "OK". If the Alpha repository URL _is not_ in your custom repositories, you're all set!
+![Screenshot 2022-11-29 at 16 18 00](https://user-images.githubusercontent.com/4679612/204669741-ef59c09a-ba88-49ce-9cbc-e723f8a4da74.png)
+5. You should now be able to update the plugin to the latest stable release from the JetBrains Marketplace
+
+
+## Known Issues
 
 ### SSH Connection Issue
 
