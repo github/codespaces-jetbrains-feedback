@@ -56,6 +56,33 @@ If you participated in the Alpha testing of this plugin, you may need to clear y
 ![Screenshot 2022-11-29 at 16 18 00](https://user-images.githubusercontent.com/4679612/204669741-ef59c09a-ba88-49ce-9cbc-e723f8a4da74.png)
 5. You should now be able to update the plugin to the latest stable release from the JetBrains Marketplace
 
+### Enabling Feature Preview
+
+If you would like to experiment with our newest features before they're released, then you can enable the preview option for our plugin. The preview option will give you
+the ability to toggle new features candidates on and off from the Codespaces preference page in the Gateway. 
+
+To enable feature preview, open the toolbox and find the Gateway application. Click the three dots to show the options pop-up and select `Settings`.
+
+![Screen Shot 2022-12-02 at 9 54 28 AM](https://user-images.githubusercontent.com/80130182/205321991-d63d1f5f-5a5c-414e-ae40-343ec5ef4766.png)
+
+That will open the Settings page for the Gateway. Find the configuration section and expand it if it is not already.
+
+![Screen Shot 2022-12-02 at 9 54 37 AM](https://user-images.githubusercontent.com/80130182/205322170-5d304344-f384-471d-a435-5bac039ff4af.png)
+
+Find the `Edit JVM options...` link and click it. This will open a file with the JVM options for the Gateway.
+
+![Screen Shot 2022-12-02 at 9 54 44 AM](https://user-images.githubusercontent.com/80130182/205322449-6c3a5f53-b5bc-414a-873e-129f3edc4d3b.png)
+
+In that file, add the following line:
+
+```
+-Dcodespaces.features.preview.enabled=true
+```
+
+Now, relaunch the Gateway and go to the Preferences and find the `GitHub Codespaces` page. On that page, you'll see a new section with feature preview options
+to select. 
+
+![Screen Shot 2022-12-02 at 9 55 21 AM](https://user-images.githubusercontent.com/80130182/205322795-c5958762-8e89-4c7d-a53b-105c07ed2f71.png)
 
 ## Known Issues
 
