@@ -58,6 +58,10 @@ If you participated in the Alpha testing of this plugin, you may need to clear y
 
 ### Enabling Feature Preview
 
+**Prerequisites:**
+- JetBrains Gateway version `2022.3` or later
+- GitHub Codespaces plugin version `0.3.967` or later
+
 If you would like to experiment with our newest features before they're released, then you can enable the preview option for our plugin. The preview option will give you
 the ability to toggle new features candidates on and off from the Codespaces preference page in the Gateway. 
 
