@@ -88,11 +88,18 @@ to select.
 
 ### SSH Connection Issue
 
-If you're having trouble connecting and the stack trace includes information about your SSH setup, there may be an issue with your keys.
+If you're having trouble connecting and the stack trace or error message includes information about your SSH setup, there may be an issue with your keys.
 
-If you have a key matching `/Users/<name>/.ssh/id_ed25519`, it's possible that this was a malformed key from connecting to codespaces with an older version of the `gh` client.
+**If you are on plugin version `0.3.0.959` or later:** You should have the latest updates to the SSH connection flow. If you are continuing to see SSH issues, try removing any custom key configuration you have added to the Codespaces plugin settings in the Gateway:
 
-To fix this, try removing the key and going through the connectin process again. You should see a key called `codespaces.auto` in your SSH directory and the connection should succeed.
+<img width="1094" alt="Screenshot 2022-12-06 at 09 13 28" src="https://user-images.githubusercontent.com/4679612/205964271-ca741157-b3c6-451e-b316-09f7a1cf02ed.png">
+
+**If you are on plugin version `0.3.0.959` or earlier:** Upgrade to the latest plugin version, and follow the instructions above to ensure you are using the latest SSH connection logic.
+
+**Notes about versions:**
+
+- If your plugin version begins with `0.2.x.x`, you are using a plugin that is designed for the `2022.2.x` Gateway version, and we recommend upgrading to the latest `2022.3.x` JetBrains Gateway
+- If your Codespaces plugin version is `0.3.0.900` or earlier, or `0.2.0.899` or earlier, your Gateway may still be configured to check our Alpha channel for plugin releases. To move to the stable channel, follow the [Alpha transition steps](https://github.com/github/codespaces-jetbrains-feedback#transitioning-from-the-alpha).
 
 ### MacOS 13 (Ventura)
 
